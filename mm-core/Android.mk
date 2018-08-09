@@ -3,7 +3,7 @@ ifneq ($(BUILD_TINY_ANDROID),true)
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
-OMXCORE_CFLAGS := -g -O3 -DVERBOSE
+OMXCORE_CFLAGS := -g -O3 -DVERBOSE -Wno-error
 OMXCORE_CFLAGS += -O0 -fno-inline -fno-short-enums
 OMXCORE_CFLAGS += -D_ANDROID_
 OMXCORE_CFLAGS += -U_ENABLE_QC_MSG_LOG_
