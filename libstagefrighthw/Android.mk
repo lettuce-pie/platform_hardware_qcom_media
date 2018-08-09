@@ -30,6 +30,8 @@ ifeq ($(TARGET_USES_MEDIA_EXTENSIONS),true)
 LOCAL_CFLAGS += -DUSE_NATIVE_HANDLE_SOURCE
 endif
 
+LOCAL_CFLAGS += -Wno-error
+
 LOCAL_C_INCLUDES:= \
         frameworks/native/include/media/openmax \
         frameworks/native/include/media/hardware
