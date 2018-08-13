@@ -60,7 +60,8 @@ libmm-venc-def += -DSUPPORT_CONFIG_INTRA_REFRESH
 endif
 
 # Common Includes
-libmm-venc-inc      := $(LOCAL_PATH)/inc
+libmm-venc-inc := $(LOCAL_PATH)/inc
+libmm-venc-inc += $(OMX_VIDEO_PATH)/vidc/common/inc
 libmm-venc-inc      += $(TOP)/hardware/qcom/media-caf-msm8916/mm-video-v4l2/vidc/common/inc
 libmm-venc-inc      += hardware/qcom/media-caf-msm8916/mm-core/inc
 libmm-venc-inc      += hardware/qcom/media-caf-msm8916/libstagefrighthw
